@@ -1,191 +1,311 @@
-# 📊 Customer Churn Prediction using Machine Learning
+# 📊 Customer Churn Prediction & Retention Analytics
 
-> Built an end-to-end customer churn prediction pipeline using Random Forest and SMOTE to identify customers at risk of leaving and derive actionable business insights for improving customer retention.
+<p align="center">
+<img src="Images/churn_banner.png" width="900">
+</p>
 
-![Python](https://img.shields.io/badge/Python-3.x-blue)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange)
+<p align="center">
+
+![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-green)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-orange)
+![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-red)
 ![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
 
----
-
-## 🎯 Problem Statement
-
-Customer churn directly impacts revenue and growth in telecom businesses. This project aims to predict whether a customer is likely to churn and uncover the factors responsible for customer attrition, enabling proactive retention strategies.
+</p>
 
 ---
 
-## 🚀 Project Highlights
+# 🚀 Project Overview
 
-- ✅ Performed data cleaning and preprocessing.
-- ✅ Conducted Exploratory Data Analysis (EDA).
-- ✅ Handled class imbalance using SMOTE.
-- ✅ Trained a Random Forest Classifier.
-- ✅ Evaluated model performance using multiple metrics.
-- ✅ Visualized results using Confusion Matrix and ROC Curve.
-- ✅ Identified important features driving customer churn.
-- ✅ Generated business recommendations to improve retention.
+Customer churn is one of the biggest challenges faced by subscription-based businesses and telecom companies. Acquiring a new customer is significantly more expensive than retaining an existing one.
 
----
+This project builds an **end-to-end Machine Learning pipeline** that predicts whether a customer is likely to churn and provides **actionable business insights** to improve customer retention strategies.
 
-## 📊 Model Performance
+The project goes beyond model building by answering:
 
-| Metric | Score |
-|----------|--------|
-| Accuracy | **77.86%** |
-| Precision | **0.58** |
-| Recall | **0.59** |
-| F1-Score | **0.58** |
-| Weighted F1-Score | **0.78** |
-
-The model effectively classifies customer churn and provides meaningful insights that can help businesses target customers at risk of leaving.
+- **Who is likely to leave?**
+- **Why are they leaving?**
+- **What actions can the business take to retain them?**
 
 ---
 
-## 📈 Visualizations
+# 🎯 Business Objective
 
-### Confusion Matrix
+Develop a predictive system that helps companies:
 
-The confusion matrix provides a detailed view of the model's classification performance.
+✅ Identify high-risk customers.
 
-![Confusion Matrix](Images/confusion_matrix.png)
+✅ Understand the drivers behind customer attrition.
 
----
+✅ Build targeted retention campaigns.
 
-### ROC Curve and AUC Score
-
-The ROC curve illustrates the trade-off between the True Positive Rate and False Positive Rate, while the AUC score measures the model's ability to distinguish between churn and non-churn customers.
-
-![ROC Curve and AUC Score](Images/ROC_curve%20and%20AUC%20score.png)
+✅ Reduce revenue loss due to churn.
 
 ---
 
-### Top 10 Important Features
+# 💼 Skills Demonstrated
 
-Feature importance analysis highlights the variables that have the greatest impact on customer churn prediction.
+This project showcases proficiency in:
 
-![Top 10 Important Features](Images/Top%2010%20imp%20features.png)
-
----
-
-## ⚙️ Machine Learning Pipeline
-
-```text
-Raw Data
-    ↓
-Data Cleaning
-    ↓
-Exploratory Data Analysis
-    ↓
-Feature Encoding
-    ↓
-Train-Test Split
-    ↓
-SMOTE
-    ↓
-Random Forest Training
-    ↓
-Model Evaluation
-    ↓
-Confusion Matrix
-    ↓
-ROC Curve
-    ↓
-Feature Importance
-    ↓
-Business Insights
-```
+- Data Cleaning & Preprocessing
+- Exploratory Data Analysis (EDA)
+- Feature Engineering
+- Handling Imbalanced Data (SMOTE)
+- Machine Learning Model Building
+- Cross Validation
+- Model Evaluation
+- Feature Importance Analysis
+- Business Analytics
+- Model Serialization (Pickle)
+- Streamlit Deployment
+- End-to-End ML Project Development
 
 ---
 
-## 🛠 Tech Stack
+# 🛠 Tech Stack
 
 | Category | Tools |
-|------------|--------|
+|----------|--------|
 | Language | Python |
-| Data Analysis | Pandas, NumPy |
+| Data Manipulation | Pandas, NumPy |
 | Visualization | Matplotlib, Seaborn |
 | Machine Learning | Scikit-Learn |
-| Imbalance Handling | SMOTE |
-| Model | Random Forest Classifier |
+| Imbalanced Learning | SMOTE |
+| Models | Random Forest, Decision Tree, XGBoost |
+| Deployment | Streamlit |
 | Environment | Jupyter Notebook |
 
 ---
 
-## 🔍 Key Findings
+# 📂 Dataset
 
-- Customers with month-to-month contracts exhibit higher churn rates.
-- Customers with high monthly charges are more likely to leave.
-- Customers with shorter tenure are at greater risk of churn.
-- Long-term contracts significantly improve customer retention.
-- Total charges and tenure are among the strongest indicators of customer loyalty.
+**Dataset:** Telco Customer Churn Dataset
 
----
+**Features:** 20+
 
-## 💡 Business Recommendations
+**Target Variable:** Churn (Yes / No)
 
-- Encourage customers to switch to annual or long-term contracts.
-- Target newly acquired customers with retention campaigns.
-- Provide incentives to customers with high monthly charges.
-- Introduce loyalty programs to increase customer tenure.
-- Use predictive analytics to identify high-risk customers early.
+The dataset contains customer demographic information, subscription details, billing information, and service usage patterns.
 
 ---
 
-## 📈 Visualizations Included
-
-- Churn Distribution
-- Contract Type vs Churn
-- Monthly Charges Analysis
-- Total Charges Analysis
-- Correlation Heatmap
-- Feature Importance Plot
-- Confusion Matrix
-- ROC Curve
-
----
-
-## 📂 Repository Structure
+# 🔬 Project Workflow
 
 ```text
-Customer-Churn-Prediction
-│
-├── Customer_Churn_ML_final.ipynb           # End-to-end ML pipeline
-├── WA_Fn-UseC_-Telco-Customer-Churn.csv    # Telecom customer dataset
-├── requirements.txt                        # Project dependencies
-├── README.md                               # Project documentation
-├── .gitignore                              # Ignore unnecessary files
-│
-└── Images/
-    ├── confusion_matrix.png                # Confusion Matrix
-    ├── ROC_curve and AUC score.png         # ROC Curve and AUC Analysis
-    └── Top 10 imp features.png             # Top 10 Important Features
+Raw Data
+   ↓
+Data Cleaning
+   ↓
+Exploratory Data Analysis
+   ↓
+Feature Encoding
+   ↓
+Train-Test Split
+   ↓
+SMOTE (Class Balancing)
+   ↓
+Model Training
+   ↓
+Cross Validation
+   ↓
+Model Evaluation
+   ↓
+Feature Importance Analysis
+   ↓
+Business Insights
+   ↓
+Deployment using Streamlit
 ```
 
 ---
 
-## 🚀 Future Improvements
+# 📊 Exploratory Data Analysis
 
-- Hyperparameter tuning using GridSearchCV.
-- Compare Random Forest with XGBoost and LightGBM.
-- Deploy the model using Streamlit.
-- Add explainability using SHAP values.
-- Build an interactive dashboard.
+The project includes extensive EDA to understand customer behavior and churn patterns.
 
----
+### Key Analyses Performed
 
-## ⭐ Project Outcome
-
-Developed an end-to-end machine learning solution capable of predicting customer churn with **77.86% accuracy**, while generating actionable insights that can help telecom companies reduce customer attrition and improve retention strategies.
-
----
-
-## 📬 Contact
-
-**Apoorva Shree**
-
-GitHub: https://github.com/apoorva-shree
+- Churn Distribution
+- Numerical Feature Analysis
+- Correlation Heatmap
+- Contract Type Analysis
+- Monthly Charges Analysis
+- Total Charges Analysis
+- Tenure Analysis
+- Customer Segmentation
 
 ---
 
-### ⭐ If you found this project useful, feel free to star the repository!
+# 🤖 Machine Learning Models Tested
+
+| Model | Purpose |
+|-------|----------|
+| Decision Tree | Baseline Model |
+| Random Forest | Final Model |
+| XGBoost | Performance Comparison |
+
+Cross-validation was performed to compare the models and select the best-performing algorithm.
+
+---
+
+# 🏆 Final Model
+
+### Random Forest Classifier
+
+Chosen because it delivered the best balance between performance and generalization.
+
+---
+
+# 📈 Model Performance
+
+| Metric | Score |
+|---------|--------|
+| Accuracy | 77.86% |
+| Precision | 0.58 |
+| Recall | 0.59 |
+| F1 Score | 0.58 |
+| Weighted F1 | 0.78 |
+
+---
+
+# 📊 Model Evaluation
+
+## Confusion Matrix
+
+<p align="center">
+<img src="Images/confusion_matrix.png" width="550">
+</p>
+
+---
+
+## ROC Curve & AUC
+
+<p align="center">
+<img src="Images/ROC_curve and AUC score.png" width="550">
+</p>
+
+---
+
+# 🔥 Feature Importance
+
+<p align="center">
+<img src="Images/Top 10 imp features.png" width="700">
+</p>
+
+The model identified the most influential factors affecting customer churn.
+
+### Top Drivers of Churn
+
+- Contract Type
+- Tenure
+- Monthly Charges
+- Total Charges
+- Internet Service
+- Payment Method
+
+---
+
+# 📌 Key Insights
+
+### Customers most likely to churn:
+
+✔️ Month-to-Month contract customers
+
+✔️ Customers with short tenure
+
+✔️ Customers with high monthly charges
+
+✔️ Newly acquired customers
+
+---
+
+# 💡 Business Recommendations
+
+### 1. Promote Long-Term Contracts
+Offer discounts to customers willing to switch to yearly plans.
+
+### 2. Retain New Customers
+Launch onboarding and engagement campaigns during the first few months.
+
+### 3. Target High-Bill Customers
+Provide personalized offers and loyalty discounts.
+
+### 4. Build Early Warning Systems
+Use predictive analytics to proactively contact at-risk customers.
+
+### 5. Increase Customer Lifetime Value
+Implement reward programs and personalized retention strategies.
+
+---
+
+# 🌐 Deployment
+
+The trained model was:
+
+✅ Serialized using Pickle
+
+✅ Integrated into a Streamlit application
+
+✅ Deployed as an interactive churn prediction tool
+
+Users can input customer information and instantly receive churn predictions.
+
+---
+
+# 📁 Repository Structure
+
+```text
+Customer-Churn-Prediction
+│
+├── Customer_Churn_ML_final.ipynb
+├── app.py
+├── customer_churn.pkl
+├── encoders.pkl
+├── WA_Fn-UseC_-Telco-Customer-Churn.csv
+├── requirements.txt
+├── README.md
+│
+└── Images/
+      ├── confusion_matrix.png
+      ├── ROC_curve and AUC score.png
+      └── Top 10 imp features.png
+```
+
+---
+
+# 🚀 Future Improvements
+
+- Hyperparameter Tuning
+- SHAP Explainability
+- Model Monitoring
+- Docker Containerization
+- CI/CD Pipeline
+- Cloud Deployment (AWS/GCP/Azure)
+
+---
+
+# ⭐ Project Outcome
+
+Built an **end-to-end Machine Learning solution** capable of:
+
+✔ Predicting customer churn with **77.86% accuracy**
+
+✔ Generating actionable business insights
+
+✔ Demonstrating the complete ML lifecycle:
+
+**EDA → Preprocessing → Modeling → Evaluation → Business Analytics → Deployment**
+
+---
+
+# 👨‍💻 Author
+
+## Apoorva Shree
+
+📌 Aspiring Data Scientist & Machine Learning Engineer
+
+🔗 GitHub: https://github.com/apoorva-shree
+---
+
+### ⭐ If you found this project interesting, consider giving it a star!
