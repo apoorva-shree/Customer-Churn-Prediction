@@ -306,6 +306,7 @@ Built an **end-to-end Machine Learning solution** capable of:
 📌 Aspiring Data Scientist & Machine Learning Engineer
 
 🔗 GitHub: https://github.com/apoorva-shree
+🔗 Live app : https://customer-churn-prediction-5ppqck2xqutudhe4chxaff.streamlit.app/
 ---
 
 ### ⭐ If you found this project interesting, consider giving it a star!
